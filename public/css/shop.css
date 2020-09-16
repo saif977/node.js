@@ -1,0 +1,55 @@
+nav{
+    background-color: rgb(133, 47, 245);
+    color:white;
+}
+
+ul{
+    display: flex;
+    flex:row nowrap;
+    padding:10px;
+}
+
+.card{
+    padding:10px;
+    display: flex;
+    flex:row wrap;
+    
+}
+
+li{
+    list-style-type: none;
+    color:white;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.active{
+    color:rgb(7, 7, 255) !important;
+}
+
+main h1 li{
+    color:black;
+    margin:10px;
+    border:1px solid black;
+} 
+ 
+.button{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    justify-content: center;
+}
+
+
+.card li{
+    text-align: center
+}
+
+.card li img{
+    width:100%;
+    height:150px;
+}

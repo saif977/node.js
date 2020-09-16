@@ -1,0 +1,17 @@
+<%- include('includes/head.ejs')%>
+  
+  <main>
+    <h1>
+        page not found 
+    </h1>
+    <% for(i of prod) { %>
+        <% if(i==='tootl') { %>
+     <li>
+        <%=i %> 
+     </li>
+        <% } else { %>
+          <h1><%= i %></h1>
+        <% } %>
+    <% } %>
+  </main>
+<%- include('includes/tail.ejs') %>

@@ -1,0 +1,38 @@
+nav{
+    background-color: rgb(133, 47, 245);
+    color:white;
+}
+
+ul{
+    display: flex;
+    flex:row nowrap;
+    padding:10px;
+}
+
+li{
+    list-style-type: none;
+    color:white;
+    padding: 0px 10px;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.active{
+    color:rgb(7, 7, 255) !important;
+}
+
+main > form{
+    width: 300px;
+    display: flex;
+    flex-flow:column nowrap;
+   justify-content: center;
+   
+}
+
+main a{
+    background: #ddd;
+    border:1px solid grey; 
+}

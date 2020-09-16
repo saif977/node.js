@@ -1,0 +1,21 @@
+<%- include('../includes/head.ejs') %>
+<%- include('../includes/nav.ejs') %>
+<main>
+    <% if (cartP.length > 0) { %>
+        <% for(i of cartP) { %>
+            <li>
+                <%= i.product.title %> (<%= i.qt %>)
+                 <form action="/product/cart/delete" method="post">
+                    <button type="submit">Delete</button>
+                    <input type="hidden" name="id" value="<%=i.product.id%>">
+                    <input type="hidden" name="price" value="<%=i.product.price%>">
+                 </form>
+            </li>
+        <% } %>    
+    <% } else { %>
+        <h1>
+          nothing there...
+        </h1>
+    <% } %>   
+</main>
+<%- include('../includes/tail.ejs') %>

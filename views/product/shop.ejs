@@ -1,0 +1,28 @@
+<%- include('../includes/head.ejs') %>
+<%- include('../includes/nav.ejs') %>
+    <main>
+        <h1>
+            list of products....
+
+            <% if(items.length > 0) {%>
+                    <div class="card">
+                        <% for(i of items) { %>
+                           <li>
+                               <%= i.title %>
+                               <img src="<%=i.url%>">
+                               <p><%= i.description%></p>
+                               <b><%= i.price%></b>
+                               <form action="addtocart/">
+                                  <button type="submit" name="addTocart">add to cart</button>
+                               </form>
+                              
+                            </li>   
+                         <% }%>  
+            </div>   
+            <% } else {%>
+                <h3>no products</h3>
+                <% }%>   
+
+        </h1>
+    </main>
+    <%- include('../includes/tail.ejs') %>
